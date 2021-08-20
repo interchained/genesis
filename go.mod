@@ -1,4 +1,4 @@
-module github.com/tendermint/starport
+module github.com/interchained/genesis
 
 go 1.16
 
@@ -11,8 +11,8 @@ require (
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/charmbracelet/glow v1.4.0
 	github.com/containerd/containerd v1.5.2 // indirect
-	github.com/cosmos/cosmos-sdk v0.42.6
-	github.com/cosmos/go-bip39 v1.0.0
+	github.com/interchained/cosmos-sdk v0.42.6
+	github.com/interchained/go-bip39 v1.0.0
 	github.com/dariubs/percent v0.0.0-20200128140941-b7801cf1c7e2
 	github.com/docker/docker v20.10.7+incompatible
 	github.com/emicklei/proto v1.9.0
@@ -45,11 +45,11 @@ require (
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.0
-	github.com/tendermint/flutter v1.0.0
-	github.com/tendermint/spm v0.0.0-20210705094313-42e72ad05b63
-	github.com/tendermint/spn v0.0.0-20210406123257-decaff8dcaf9
-	github.com/tendermint/tendermint v0.34.11
-	github.com/tendermint/vue v0.1.49
+	github.com/interchained/genesis-flutter v1.0.0
+	github.com/interchained/gpm v0.0.0-20210705094313-42e72ad05b63
+	github.com/interchained/gpn v0.0.0-20210406123257-decaff8dcaf9
+	github.com/interchained/genesismint v0.34.11
+	github.com/interchained/vue v0.1.49
 	go.opencensus.io v0.22.6 // indirect
 	golang.org/x/mod v0.4.2
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
@@ -58,6 +58,6 @@ require (
 )
 
 replace (
-	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+	github.com/gogo/protobuf => github.com/interchained/protobuf v1.3.3-alpha.regen.1
 	github.com/keybase/go-keychain => github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4
 )
