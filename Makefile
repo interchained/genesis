@@ -1,23 +1,23 @@
 #! /usr/bin/make -f
 
 # Project variables.
-PROJECT_NAME = starport
+PROJECT_NAME = genesis
 DATE := $(shell date '+%Y-%m-%dT%H:%M:%S')
 HEAD = $(shell git rev-parse HEAD)
-LD_FLAGS = -X github.com/tendermint/starport/starport/internal/version.Head='$(HEAD)' \
-	-X github.com/tendermint/starport/starport/internal/version.Date='$(DATE)'
+LD_FLAGS = -X github.com/interchained/genesis/genesis/internal/version.Head='$(HEAD)' \
+	-X github.com/interchained/genesis/genesis/internal/version.Date='$(DATE)'
 BUILD_FLAGS = -mod=readonly -ldflags='$(LD_FLAGS)'
 BUILD_FOLDER = ./dist
 
 ## install: Install de binary.
 install:
-	@echo Installing Starport...
+	@echo Installing Genesis...
 	@go install $(BUILD_FLAGS) ./...
-	@starport version
+	@genesis version
 
 ## build: Build the binary.
 build:
-	@echo Building Starport...
+	@echo Building Genesis...
 	@-mkdir -p $(BUILD_FOLDER) 2> /dev/null
 	@go build $(BUILD_FLAGS) -o $(BUILD_FOLDER) ./...
 
@@ -45,7 +45,7 @@ lint:
 ## test-unit: Run the unit tests.
 test-unit:
 	@echo Running unit tests...
-	@go test -race -failfast -v ./starport/...
+	@go test -race -failfast -v ./genesis/...
 
 ## test-integration: Run the integration tests.
 test-integration: install
