@@ -7,9 +7,9 @@ import (
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/plush"
 	"github.com/gobuffalo/plushgen"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	"github.com/tendermint/starport/starport/pkg/xstrings"
-	"github.com/tendermint/starport/starport/templates/testutil"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/pkg/xstrings"
+	"github.com/interchained/genesis/genesis/templates/testutil"
 )
 
 var (
