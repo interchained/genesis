@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-    svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
+    svrcmd "github.com/interchained/cosmos-sdk/server/cmd"
 	"<%= ModulePath %>/app"
-	"github.com/tendermint/spm/cosmoscmd"
+	"github.com/interchained/gpm/cosmoscmd"
 )
 
 func main() {
