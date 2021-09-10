@@ -3,8 +3,8 @@ package field_test
 import (
 	"errors"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/starport/starport/pkg/field"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/field"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
 	"testing"
 )
 

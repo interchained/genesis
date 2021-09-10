@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/app"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/app"
 )
 
 var (

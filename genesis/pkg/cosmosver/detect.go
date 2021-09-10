@@ -1,14 +1,14 @@
 package cosmosver
 
 import (
-	"github.com/tendermint/starport/starport/pkg/gomodule"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
 	"golang.org/x/mod/semver"
 )
 
 const (
-	cosmosModulePath            = "github.com/cosmos/cosmos-sdk"
-	cosmosModuleMaxLaunchpadTag = "v0.39.99"
-	cosmosModuleStargateTag     = "v0.40.0"
+	cosmosModulePath            = "github.com/interchained/cosmos-sdk"
+	cosmosModuleMaxLaunchpadTag = "v0.44.1"
+	cosmosModuleStargateTag     = "v0.43.1"
 )
 
 // Detect dedects major version of Cosmos.
