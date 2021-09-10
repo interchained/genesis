@@ -2,7 +2,7 @@ package starportcmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/services/scaffolder"
+	"github.com/interchained/genesis/genesis/services/scaffolder"
 )
 
 // NewScaffoldList returns a new command to scaffold a list.

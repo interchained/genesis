@@ -1,3 +1,3 @@
-FROM starport/cli:develop
+FROM genesis/cli:develop
 
 USER root

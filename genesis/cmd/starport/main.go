@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	starportcmd "github.com/tendermint/starport/starport/cmd"
-	"github.com/tendermint/starport/starport/pkg/clictx"
-	"github.com/tendermint/starport/starport/pkg/validation"
+	starportcmd "github.com/interchained/genesis/genesis/cmd"
+	"github.com/interchained/genesis/genesis/pkg/clictx"
+	"github.com/interchained/genesis/genesis/pkg/validation"
 )
 
 func main() {

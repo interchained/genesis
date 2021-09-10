@@ -5,10 +5,10 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/nodetime"
-	"github.com/tendermint/starport/starport/pkg/protoc"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/nodetime"
+	"github.com/interchained/genesis/genesis/pkg/protoc"
 )
 
 // NewTools returns a command where various tools (binaries) are attached as sub commands
@@ -30,7 +30,7 @@ func NewToolsIBCSetup() *cobra.Command {
 		Use:   "ibc-setup [--] [...]",
 		Short: "Collection of commands to quickly setup a relayer",
 		RunE:  toolsNodetimeProxy(nodetime.CommandIBCSetup),
-		Example: `starport tools ibc-setup -- -h
+		Example: `genesis starport tools ibc-setup -- -h
 starport tools ibc-setup -- init --src relayer_test_1 --dest relayer_test_2`,
 	}
 }
@@ -40,7 +40,7 @@ func NewToolsIBCRelayer() *cobra.Command {
 		Use:     "ibc-relayer [--] [...]",
 		Short:   "Typescript implementation of an IBC relayer",
 		RunE:    toolsNodetimeProxy(nodetime.CommandIBCRelayer),
-		Example: `starport tools ibc-relayer -- -h`,
+		Example: `genesis starport tools ibc-relayer -- -h`,
 	}
 }
 
@@ -50,7 +50,7 @@ func NewToolsProtoc() *cobra.Command {
 		Short:   "Execute the protoc command",
 		Long:    "The protoc command. You don't need to setup the global protoc include folder with -I, it's automatically handled",
 		RunE:    toolsProtocProxy,
-		Example: `starport tools protoc -- --version`,
+		Example: `genesis starport tools protoc -- --version`,
 	}
 }
 
@@ -100,15 +100,15 @@ func NewToolsCompletions() *cobra.Command {
 
 Bash:
 
-  $ source <(starport  tools completions bash)
+  $ source <(genesis starport  tools completions bash)
 
   To load completions for every new session, run:
 
   ** Linux **
-  $ starport  tools completions bash > /etc/bash_completion.d/starport
+  $ genesis starport  tools completions bash > /etc/bash_completion.d/starport
 
   ** macOS **
-  $ starport  tools completions bash > /usr/local/etc/bash_completion.d/starport
+  $ genesis starport  tools completions bash > /usr/local/etc/bash_completion.d/starport
 
 Zsh:
 
@@ -118,25 +118,25 @@ Zsh:
 
   To load completions for each session, execute once:
   
-  $ starport  tools completions zsh > "${fpath[1]}/_starport"
+  $ genesis starport  tools completions zsh > "${fpath[1]}/_starport"
 
   You will need to start a new shell for this setup to take effect.
 
 fish:
 
-  $ starport  tools completions fish | source
+  $ genesis starport  tools completions fish | source
 
   To load completions for each session, execute once:
   
-  $ starport  tools completions fish > ~/.config/fish/completionss/starport.fish
+  $ genesis starport  tools completions fish > ~/.config/fish/completionss/starport.fish
 
 PowerShell:
 
-  PS> starport  tools completions powershell | Out-String | Invoke-Expression
+  PS> genesis starport  tools completions powershell | Out-String | Invoke-Expression
 
   To load completions for every new session, run:
   
-  PS> starport  tools completions powershell > starport.ps1
+  PS> genesis starport  tools completions powershell > starport.ps1
   
   and source this file from your PowerShell profile.
 `,

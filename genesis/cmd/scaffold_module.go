@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/validation"
-	"github.com/tendermint/starport/starport/services/scaffolder"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/validation"
+	"github.com/interchained/genesis/genesis/services/scaffolder"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
 )
 
 const (
@@ -26,8 +26,8 @@ const (
 func NewScaffoldModule() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "module [name]",
-		Short: "Scaffold a Cosmos SDK module",
-		Long:  "Scaffold a new Cosmos SDK module in the `x` directory",
+		Short: "Scaffold an Interchained module",
+		Long:  "Scaffold a new Interchained module in the `x` directory",
 		Args:  cobra.MinimumNArgs(1),
 		RunE:  scaffoldModuleHandler,
 	}
@@ -122,7 +122,7 @@ func scaffoldModuleHandler(cmd *cobra.Command, args []string) error {
 // in previously scaffolded apps gov keeper is defined below the scaffolded module keeper definition
 // therefore we must warn the user to manually move the definition if it's the case
 // https://github.com/tendermint/starport/issues/818#issuecomment-865736052
-const govWarning = `⚠️ If your app has been scaffolded with Starport 0.16.x or below
+const govWarning = `⚠️ If your app has been scaffolded with Genesis Starport 0.16.x or below
 Please make sure that your module keeper definition is defined after gov module keeper definition in app/app.go:
 
 app.GovKeeper = ...

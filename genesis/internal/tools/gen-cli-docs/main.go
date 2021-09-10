@@ -16,23 +16,23 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
-	starportcmd "github.com/tendermint/starport/starport/cmd"
+	starportcmd "github.com/interchained/genesis/genesis/cmd"
 )
 
 const head = `---
 order: 1
-description: Starport CLI docs. 
+description: Genesis Starport CLI docs. 
 parent:
   order: 8
   title: CLI 
 ---
 
 # CLI
-Documentation for Starport CLI.
+Documentation for Genesis Starport CLI.
 `
 
 func main() {
-	outPath := flag.String("out", ".", ".md file path to place Starport CLI docs inside")
+	outPath := flag.String("out", ".", ".md file path to place Genesis Starport CLI docs inside")
 	flag.Parse()
 
 	if err := generate(starportcmd.New(context.Background()), *outPath); err != nil {
