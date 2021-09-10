@@ -1,6 +1,6 @@
 package chaincmd
 
-import "github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+import "github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
 
 const (
 	commandConfig     = "config"
