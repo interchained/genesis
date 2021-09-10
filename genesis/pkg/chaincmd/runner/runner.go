@@ -9,11 +9,11 @@ import (
 
 	"github.com/ghodss/yaml"
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/lineprefixer"
-	"github.com/tendermint/starport/starport/pkg/truncatedbuffer"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/lineprefixer"
+	"github.com/interchained/genesis/genesis/pkg/truncatedbuffer"
 )
 
 // Runner provides a high level access to a blockchain's commands.
