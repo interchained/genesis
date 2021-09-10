@@ -3,9 +3,9 @@ package <%= moduleName %>
 import (
 	"github.com/bandprotocol/bandchain-packet/obi"
 	"github.com/bandprotocol/bandchain-packet/packet"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
+	sdk "github.com/interchained/cosmos-sdk/types"
+	sdkerrors "github.com/interchained/cosmos-sdk/types/errors"
+	channeltypes "github.com/interchained/cosmos-sdk/x/ibc/core/04-channel/types"
 	"<%= modulePath %>/x/<%= moduleName %>/types"
 )
 

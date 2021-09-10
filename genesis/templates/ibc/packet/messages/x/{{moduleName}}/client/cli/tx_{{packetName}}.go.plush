@@ -6,11 +6,11 @@ import (
     <%= if (fields.NeedCast()) { %> "github.com/spf13/cast" <% } %>
 	"github.com/spf13/cobra"
 
-    "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
+    "github.com/interchained/cosmos-sdk/client"
+	"github.com/interchained/cosmos-sdk/client/flags"
+	"github.com/interchained/cosmos-sdk/client/tx"
 	"<%= modulePath %>/x/<%= moduleName %>/types"
-	channelutils "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/client/utils"
+	channelutils "github.com/interchained/cosmos-sdk/x/ibc/core/04-channel/client/utils"
 )
 
 var _ = strconv.Itoa(0)

@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
 )
 
 // NewStargate returns the generator to scaffold a empty message in a Stargate module

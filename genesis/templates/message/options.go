@@ -1,8 +1,8 @@
 package message
 
 import (
-	"github.com/tendermint/starport/starport/pkg/field"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/field"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
 )
 
 // Options ...
