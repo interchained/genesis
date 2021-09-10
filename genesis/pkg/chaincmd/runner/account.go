@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
 )
 
 var (
