@@ -5,23 +5,23 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
 
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/AlecAivazis/survey/v2/terminal"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/interchained/cosmos-sdk/types"
 	"github.com/manifoldco/promptui"
 	"github.com/pkg/errors"
 	"github.com/rdegges/go-ipify"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cliquiz"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/events"
-	"github.com/tendermint/starport/starport/pkg/jsondoc"
-	"github.com/tendermint/starport/starport/pkg/xchisel"
-	"github.com/tendermint/starport/starport/services/chain"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
-	"github.com/tendermint/tendermint/libs/os"
+	"github.com/interchained/genesis/genesis/pkg/cliquiz"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/events"
+	"github.com/interchained/genesis/genesis/pkg/jsondoc"
+	"github.com/interchained/genesis/genesis/pkg/xchisel"
+	"github.com/interchained/genesis/genesis/services/chain"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
+	"github.com/interchained/genesismint/libs/os"
 )
 
 const (
