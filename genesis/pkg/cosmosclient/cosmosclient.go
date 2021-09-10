@@ -4,16 +4,16 @@ import (
 	"io"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	staking "github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/tendermint/spn/app/params"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	"github.com/interchained/cosmos-sdk/client"
+	"github.com/interchained/cosmos-sdk/client/flags"
+	"github.com/interchained/cosmos-sdk/client/tx"
+	cryptocodec "github.com/interchained/cosmos-sdk/crypto/codec"
+	sdk "github.com/interchained/cosmos-sdk/types"
+	"github.com/interchained/cosmos-sdk/types/tx/signing"
+	authtypes "github.com/interchained/cosmos-sdk/x/auth/types"
+	staking "github.com/interchained/cosmos-sdk/x/staking/types"
+	"github.com/interchained/gpn/app/params"
+	rpchttp "github.com/interchained/genesismint/rpc/client/http"
 )
 
 const (
