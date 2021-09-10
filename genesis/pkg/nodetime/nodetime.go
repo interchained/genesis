@@ -10,8 +10,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/tendermint/starport/starport/pkg/localfs"
-	"github.com/tendermint/starport/starport/pkg/nodetime/data"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/nodetime/data"
 )
 
 // the list of CLIs included.

@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/olekukonko/tablewriter"
-	"github.com/tendermint/starport/starport/pkg/spn"
+	"github.com/interchained/genesis/genesis/pkg/spn"
 
 	"github.com/spf13/cobra"
 )

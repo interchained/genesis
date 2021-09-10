@@ -1,17 +1,17 @@
 image:
   file: .gitpod.Dockerfile
 
-checkoutLocation: "starport"
+checkoutLocation: "genesis"
 
-workspaceLocation: "./starport/.gitpod"
+workspaceLocation: "./genesis/.gitpod"
 
 tasks:
   - name: Setup
 
     init: |
       ##
-      ## install Starport
-      go install /workspace/starport/...
+      ## install Genesis Starport
+      go install /workspace/genesis/...
 
     command: |
       ##
@@ -37,7 +37,7 @@ tasks:
       # print a welcome message.
       clear && printf '\e[3J'
       echo -e "
-      This terminal has the \033[1mstarport\033[0m binary already installed and ready to go.
+      This terminal has the \033[1mgenesis\033[0m binary already installed and ready to go.
 
       "
 

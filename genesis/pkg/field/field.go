@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
 )
 
 const (

@@ -5,16 +5,16 @@ import (
 	"os"
 
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/starport/starport/pkg/field"
-	"github.com/tendermint/starport/starport/pkg/gomodulepath"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
-	"github.com/tendermint/starport/starport/templates/typed"
-	"github.com/tendermint/starport/starport/templates/typed/dry"
-	"github.com/tendermint/starport/starport/templates/typed/indexed"
-	"github.com/tendermint/starport/starport/templates/typed/singleton"
+	"github.com/interchained/genesis/genesis/pkg/field"
+	"github.com/interchained/genesis/genesis/pkg/gomodulepath"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
+	"github.com/interchained/genesis/genesis/templates/typed"
+	"github.com/interchained/genesis/genesis/templates/typed/dry"
+	"github.com/interchained/genesis/genesis/templates/typed/indexed"
+	"github.com/interchained/genesis/genesis/templates/typed/singleton"
 )
 
 // AddTypeOption configures options for AddType.

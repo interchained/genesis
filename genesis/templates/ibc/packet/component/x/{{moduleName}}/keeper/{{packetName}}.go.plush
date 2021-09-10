@@ -3,12 +3,12 @@ package keeper
 import (
     "errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/interchained/cosmos-sdk/types"
+	sdkerrors "github.com/interchained/cosmos-sdk/types/errors"
 	"<%= modulePath %>/x/<%= moduleName %>/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	clienttypes "github.com/interchained/cosmos-sdk/x/ibc/core/02-client/types"
+	channeltypes "github.com/interchained/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/interchained/cosmos-sdk/x/ibc/core/24-host"
 )
 
 // Transmit<%= packetName.UpperCamel %>Packet transmits the packet over IBC with the specified source port and source channel

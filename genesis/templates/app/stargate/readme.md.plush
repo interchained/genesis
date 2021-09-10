@@ -1,5 +1,5 @@
 # <%= AppName %>
-**<%= AppName %>** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://github.com/tendermint/starport).
+**<%= AppName %>** is a blockchain built using Cosmos SDK and Tendermint and created with [Starport](https://github.com/interchained/genesis).
 
 ## Get started
 
@@ -15,7 +15,7 @@ Your blockchain in development can be configured with `config.yml`. To learn mor
 
 ### Launch
 
-To launch your blockchain live on multiple nodes, use `starport network` commands. Learn more about [Starport Network](https://github.com/tendermint/spn).
+To launch your blockchain live on multiple nodes, use `starport network` commands. Learn more about [Starport Network](https://github.com/interchained/gpn).
 
 ### Web Frontend
 
@@ -27,7 +27,7 @@ npm install
 npm run serve
 ```
 
-The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Starport front-end development](https://github.com/tendermint/vue).
+The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Starport front-end development](https://github.com/interchained/vue).
 
 ## Release
 To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
@@ -45,11 +45,11 @@ To install the latest version of your blockchain node's binary, execute the foll
 ```
 curl https://get.starport.network/<%= OwnerAndRepoName %>@latest! | sudo bash
 ```
-`<%= OwnerAndRepoName %>` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
+`<%= OwnerAndRepoName %>` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/interchained/genesis-installer).
 
 ## Learn more
 
-- [Starport](https://github.com/tendermint/starport)
+- [Genesis Starport](https://github.com/interchained/genesis)
 - [Starport Docs](https://docs.starport.network)
 - [Cosmos SDK documentation](https://docs.cosmos.network)
 - [Cosmos SDK Tutorials](https://tutorials.cosmos.network)

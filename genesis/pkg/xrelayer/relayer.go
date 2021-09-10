@@ -3,7 +3,7 @@ package xrelayer
 import (
 	"context"
 
-	tsrelayer "github.com/tendermint/starport/starport/pkg/nodetime/programs/ts-relayer"
+	tsrelayer "github.com/interchained/genesis/genesis/pkg/nodetime/programs/ts-relayer"
 )
 
 type LinkStatus struct {

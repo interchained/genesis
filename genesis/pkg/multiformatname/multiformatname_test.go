@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
 	"testing"
 )
 

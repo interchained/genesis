@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/lineprefixer"
-	"github.com/tendermint/starport/starport/pkg/prefixgen"
+	"github.com/interchained/genesis/genesis/pkg/lineprefixer"
+	"github.com/interchained/genesis/genesis/pkg/prefixgen"
 )
 
 // prefixes holds prefix configuration for logs messages.

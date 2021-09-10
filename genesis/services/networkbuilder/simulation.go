@@ -10,16 +10,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
 
 	"github.com/cenkalti/backoff"
 	"github.com/pelletier/go-toml"
-	"github.com/tendermint/starport/starport/pkg/availableport"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/tendermint/starport/starport/pkg/events"
-	"github.com/tendermint/starport/starport/pkg/httpstatuschecker"
-	"github.com/tendermint/starport/starport/pkg/xurl"
-	"github.com/tendermint/starport/starport/services/chain"
+	"github.com/interchained/genesis/genesis/pkg/availableport"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
+	"github.com/interchained/genesis/genesis/pkg/events"
+	"github.com/interchained/genesis/genesis/pkg/httpstatuschecker"
+	"github.com/interchained/genesis/genesis/pkg/xurl"
+	"github.com/interchained/genesis/genesis/services/chain"
 )
 
 const ValidatorSetNilErrorMessage = "validator set is nil in genesis and still empty after InitChain"

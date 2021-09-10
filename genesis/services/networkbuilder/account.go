@@ -1,7 +1,7 @@
 package networkbuilder
 
 import (
-	"github.com/tendermint/starport/starport/pkg/spn"
+	"github.com/interchained/genesis/genesis/pkg/spn"
 )
 
 // AccountUse sets the account to be used while working with SPN.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cosmosaccount"
+	"github.com/interchained/genesis/genesis/pkg/cosmosaccount"
 )
 
 func NewAccountCreate() *cobra.Command {

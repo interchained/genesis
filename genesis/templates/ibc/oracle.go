@@ -9,11 +9,11 @@ import (
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/plush"
 	"github.com/gobuffalo/plushgen"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/plushhelpers"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	"github.com/tendermint/starport/starport/pkg/xstrings"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/plushhelpers"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/pkg/xstrings"
 )
 
 var (

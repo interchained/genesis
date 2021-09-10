@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cliquiz"
+	"github.com/interchained/genesis/genesis/pkg/cliquiz"
 )
 
 const (
@@ -54,7 +54,7 @@ func networkAccountExportHandler(cmd *cobra.Command, args []string) error {
 
 	// ask for encryption password.
 	var password string
-	if err := cliquiz.Ask(cliquiz.NewQuestion("Encytrpion password", &password, cliquiz.HideAnswer())); err != nil {
+	if err := cliquiz.Ask(cliquiz.NewQuestion("Encryption password", &password, cliquiz.HideAnswer())); err != nil {
 		return err
 	}
 	if password == "" {

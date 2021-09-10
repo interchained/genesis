@@ -5,14 +5,14 @@ import (
 	"os"
 	"path/filepath"
 
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
 
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
 
 	"github.com/pelletier/go-toml"
-	starportconf "github.com/tendermint/starport/starport/chainconf"
-	"github.com/tendermint/starport/starport/pkg/cosmosver"
-	"github.com/tendermint/starport/starport/pkg/xurl"
+	starportconf "github.com/interchained/genesis/genesis/chainconf"
+	"github.com/interchained/genesis/genesis/pkg/cosmosver"
+	"github.com/interchained/genesis/genesis/pkg/xurl"
 )
 
 type stargatePlugin struct {

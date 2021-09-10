@@ -11,19 +11,19 @@ import (
 	"strings"
 
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	appanalysis "github.com/tendermint/starport/starport/pkg/cosmosanalysis/app"
-	"github.com/tendermint/starport/starport/pkg/cosmosver"
-	"github.com/tendermint/starport/starport/pkg/gocmd"
-	"github.com/tendermint/starport/starport/pkg/gomodulepath"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/validation"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	"github.com/tendermint/starport/starport/templates/module"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
-	moduleimport "github.com/tendermint/starport/starport/templates/module/import"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	appanalysis "github.com/interchained/genesis/genesis/pkg/cosmosanalysis/app"
+	"github.com/interchained/genesis/genesis/pkg/cosmosver"
+	"github.com/interchained/genesis/genesis/pkg/gocmd"
+	"github.com/interchained/genesis/genesis/pkg/gomodulepath"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/validation"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/templates/module"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
+	moduleimport "github.com/interchained/genesis/genesis/templates/module/import"
 )
 
 const (
@@ -203,7 +203,7 @@ func (s *Scaffolder) ImportModule(tracer *placeholder.Tracer, name string) (sm x
 		var validationErr validation.Error
 		if errors.As(err, &validationErr) {
 			// TODO: implement a more generic method when there will be new methods to import wasm
-			return sm, errors.New("wasm cannot be imported. Apps initialized with Starport <=0.16.2 must downgrade Starport to 0.16.2 to import wasm")
+			return sm, errors.New("wasm cannot be imported. Apps initialized with Genesis Starport <=0.16.2 must downgrade Genesis Starport to 0.16.2 to import wasm")
 		}
 		return sm, err
 	}

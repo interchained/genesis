@@ -6,9 +6,9 @@ import (
 	"text/tabwriter"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/xrelayer"
-	"github.com/tendermint/starport/starport/pkg/xstrings"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/xrelayer"
+	"github.com/interchained/genesis/genesis/pkg/xstrings"
 )
 
 // NewRelayerConnect returns a new relayer connect command to link all or some relayer paths and start

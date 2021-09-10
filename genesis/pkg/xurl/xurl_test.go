@@ -8,7 +8,7 @@ import (
 )
 
 func TestHTTPEnsurePort(t *testing.T) {
-	fmt.Println(HTTPEnsurePort("https://26657-crimson-pheasant-2x3fbpak.ws-eu03.gitpod.io/"))
+	fmt.Println(HTTPEnsurePort("http://localhost:80"))
 	cases := []struct {
 		addr    string
 		ensured string

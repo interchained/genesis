@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/tendermint/starport/starport/pkg/cosmoscoin"
-	"github.com/tendermint/starport/starport/pkg/xhttp"
+	"github.com/interchained/genesis/genesis/pkg/cosmoscoin"
+	"github.com/interchained/genesis/genesis/pkg/xhttp"
 )
 
 const (

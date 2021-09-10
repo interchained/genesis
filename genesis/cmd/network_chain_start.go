@@ -2,7 +2,7 @@ package starportcmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 )
 
 // NewNetworkChainStart creates a network chain start command.

@@ -11,11 +11,11 @@ import (
 
 	"github.com/docker/docker/pkg/archive"
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/checksum"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/gocmd"
+	"github.com/interchained/genesis/genesis/pkg/checksum"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/gocmd"
 )
 
 const releaseDir = "release"
@@ -148,10 +148,10 @@ func (c *Chain) preBuild(ctx context.Context) (buildFlags []string, err error) {
 	}
 
 	ldflags := gocmd.Ldflags(
-		fmt.Sprintf("-X github.com/cosmos/cosmos-sdk/version.Name=%s", strings.Title(c.app.Name)),
-		fmt.Sprintf("-X github.com/cosmos/cosmos-sdk/version.AppName=%sd", c.app.Name),
-		fmt.Sprintf("-X github.com/cosmos/cosmos-sdk/version.Version=%s", c.sourceVersion.tag),
-		fmt.Sprintf("-X github.com/cosmos/cosmos-sdk/version.Commit=%s", c.sourceVersion.hash),
+		fmt.Sprintf("-X github.com/interchained/cosmos-sdk/version.Name=%s", strings.Title(c.app.Name)),
+		fmt.Sprintf("-X github.com/interchained/cosmos-sdk/version.AppName=%sd", c.app.Name),
+		fmt.Sprintf("-X github.com/interchained/cosmos-sdk/version.Version=%s", c.sourceVersion.tag),
+		fmt.Sprintf("-X github.com/interchained/cosmos-sdk/version.Commit=%s", c.sourceVersion.hash),
 		fmt.Sprintf("-X %s/cmd/%s/cmd.ChainID=%s", c.app.ImportPath, binary, chainID),
 	)
 	buildFlags = []string{

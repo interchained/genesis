@@ -5,17 +5,17 @@ import (
 	"os"
 
 	dkeyring "github.com/99designs/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/go-bip39"
+	"github.com/interchained/cosmos-sdk/crypto/hd"
+	"github.com/interchained/cosmos-sdk/crypto/keyring"
+	"github.com/interchained/cosmos-sdk/types"
+	"github.com/interchained/go-bip39"
 )
 
 // KeyringServiceName used for the name of keyring in OS backend.
-const KeyringServiceName = "starport"
+const KeyringServiceName = "genesis"
 
 // KeyringHome used to store account related data.
-var KeyringHome = os.ExpandEnv("$HOME/.starport/accounts")
+var KeyringHome = os.ExpandEnv("$HOME/.genesis/accounts")
 
 var (
 	ErrAccountExists       = errors.New("account already exists")

@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
 )

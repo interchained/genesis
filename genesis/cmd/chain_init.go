@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
-	"github.com/tendermint/starport/starport/services/chain"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/services/chain"
 )
 
 func NewChainInit() *cobra.Command {

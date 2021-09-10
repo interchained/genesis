@@ -11,11 +11,11 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v37/github"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/docker"
-	"github.com/tendermint/starport/starport/pkg/gitpod"
-	"github.com/tendermint/starport/starport/pkg/xexec"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/docker"
+	"github.com/interchained/genesis/genesis/pkg/gitpod"
+	"github.com/interchained/genesis/genesis/pkg/xexec"
 )
 
 const versionDev = "development"
@@ -41,7 +41,7 @@ func CheckNext(ctx context.Context) (isAvailable bool, version string, err error
 	latest, _, err := github.
 		NewClient(nil).
 		Repositories.
-		GetLatestRelease(ctx, "tendermint", "starport")
+		GetLatestRelease(ctx, "interchained", "genesis")
 
 	if err != nil {
 		return false, "", err
@@ -79,9 +79,9 @@ func Long(ctx context.Context) string {
 
 	w.Init(b, 0, 8, 0, '\t', 0)
 
-	write("Starport version", Version)
-	write("Starport build date", Date)
-	write("Starport source hash", Head)
+	write("Genesis Starport version", Version)
+	write("Genesis Starport build date", Date)
+	write("Genesis Starport source hash", Head)
 
 	write("Your OS", runtime.GOOS)
 	write("Your arch", runtime.GOARCH)

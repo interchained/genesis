@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/imdario/mergo"
-	conf "github.com/tendermint/starport/starport/chainconf"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/tendermint/starport/starport/pkg/confile"
+	conf "github.com/interchained/genesis/genesis/chainconf"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
+	"github.com/interchained/genesis/genesis/pkg/confile"
 )
 
 const (

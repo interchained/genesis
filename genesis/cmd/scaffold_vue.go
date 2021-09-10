@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/services/scaffolder"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/services/scaffolder"
 )
 
 const flagPath = "path"

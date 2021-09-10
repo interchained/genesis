@@ -5,8 +5,8 @@ import (
 	"context"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
 )
 
 // InstallDependencies installs protoc dependencies needed by Cosmos ecosystem.

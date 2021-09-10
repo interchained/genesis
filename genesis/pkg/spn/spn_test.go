@@ -3,9 +3,9 @@ package spn
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/go-bip39"
+	"github.com/interchained/cosmos-sdk/crypto/keyring"
+	"github.com/interchained/cosmos-sdk/types"
+	"github.com/interchained/go-bip39"
 	"github.com/stretchr/testify/require"
 )
 

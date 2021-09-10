@@ -10,15 +10,15 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/interchained/cosmos-sdk/client"
+	"github.com/interchained/cosmos-sdk/client/tx"
+	"github.com/interchained/cosmos-sdk/crypto/keyring"
+	"github.com/interchained/cosmos-sdk/types"
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/cosmosclient"
-	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
-	"github.com/tendermint/starport/starport/pkg/xfilepath"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	"github.com/interchained/genesis/genesis/pkg/cosmosclient"
+	"github.com/interchained/genesis/genesis/pkg/cosmosfaucet"
+	"github.com/interchained/genesis/genesis/pkg/xfilepath"
+	rpchttp "github.com/genesis/genesis/rpc/client/http"
 )
 
 var spnHomePath = xfilepath.JoinFromHome(xfilepath.Path("spnd"))

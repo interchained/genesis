@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/services/scaffolder"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/services/scaffolder"
 )
 
 const (
@@ -17,8 +17,8 @@ const (
 func NewScaffoldChain() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "chain [github.com/org/repo]",
-		Short: "Fully-featured Cosmos SDK blockchain",
-		Long:  "Scaffold a new Cosmos SDK blockchain with a default directory structure",
+		Short: "Fully-featured Electronero Smart Chain XRC20 token standard blockchain",
+		Long:  "Scaffold a new Electronero Smart Chain XRC20 token standard blockchain with a default directory structure",
 		Args:  cobra.ExactArgs(1),
 		RunE:  scaffoldChainHandler,
 	}
@@ -52,11 +52,11 @@ func scaffoldChainHandler(cmd *cobra.Command, args []string) error {
 	s.Stop()
 
 	message := `
-⭐️ Successfully created a new blockchain '%[1]v'.
+⭐️ Successfully created a new XRC20 blockchain on Electronero Smart Chain'%[1]v'.
 👉 Get started with the following commands:
 
  %% cd %[1]v
- %% starport chain serve
+ %% genesis starport chain serve
 
 Documentation: https://docs.starport.network
 `

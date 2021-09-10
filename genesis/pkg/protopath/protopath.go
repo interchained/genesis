@@ -5,8 +5,8 @@ import (
 	"errors"
 	"path/filepath"
 
-	"github.com/tendermint/starport/starport/pkg/gomodule"
-	"github.com/tendermint/starport/starport/pkg/xfilepath"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
+	"github.com/interchained/genesis/genesis/pkg/xfilepath"
 	"golang.org/x/mod/module"
 )
 

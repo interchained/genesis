@@ -3,7 +3,7 @@ package cosmosgen
 import (
 	"context"
 
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/module"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/module"
 	gomodmodule "golang.org/x/mod/module"
 )
 

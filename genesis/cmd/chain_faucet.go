@@ -5,9 +5,9 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
-	"github.com/tendermint/starport/starport/pkg/cosmoscoin"
-	"github.com/tendermint/starport/starport/services/chain"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/cosmoscoin"
+	"github.com/interchained/genesis/genesis/services/chain"
 )
 
 // NewChainFaucet creates a new faucet command to send coins to accounts.

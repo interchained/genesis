@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
 )
 
 const (

@@ -9,9 +9,9 @@ import (
 
 	"github.com/mattn/go-zglob"
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/module"
-	"github.com/tendermint/starport/starport/pkg/protoc"
-	protocgendart "github.com/tendermint/starport/starport/pkg/protoc-gen-dart"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/module"
+	"github.com/interchained/genesis/genesis/pkg/protoc"
+	protocgendart "github.com/interchained/genesis/genesis/pkg/protoc-gen-dart"
 	"golang.org/x/sync/errgroup"
 )
 

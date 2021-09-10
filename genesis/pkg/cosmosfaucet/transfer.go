@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
 )
 
 // TotalTransferredAmount returns the total transferred amount from faucet account to toAccountAddress.

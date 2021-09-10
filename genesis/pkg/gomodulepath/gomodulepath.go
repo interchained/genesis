@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/gomodule"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
 	"golang.org/x/mod/module"
 	"golang.org/x/mod/semver"
 )

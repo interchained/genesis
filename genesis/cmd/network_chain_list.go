@@ -8,10 +8,10 @@ import (
 
 	"github.com/olekukonko/tablewriter"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/ctxreader"
-	"github.com/tendermint/starport/starport/pkg/spn"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/ctxreader"
+	"github.com/interchained/genesis/genesis/pkg/spn"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 	"golang.org/x/sync/errgroup"
 )
 

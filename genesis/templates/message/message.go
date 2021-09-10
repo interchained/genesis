@@ -8,8 +8,8 @@ import (
 	"github.com/gobuffalo/packd"
 	"github.com/gobuffalo/plush"
 	"github.com/gobuffalo/plushgen"
-	"github.com/tendermint/starport/starport/pkg/plushhelpers"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/pkg/plushhelpers"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
 )
 
 var (

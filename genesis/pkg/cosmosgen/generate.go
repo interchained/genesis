@@ -4,11 +4,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/module"
-	"github.com/tendermint/starport/starport/pkg/gomodule"
-	"github.com/tendermint/starport/starport/pkg/protopath"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/module"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
+	"github.com/interchained/genesis/genesis/pkg/protopath"
 )
 
 var sdkImport = "github.com/cosmos/cosmos-sdk"

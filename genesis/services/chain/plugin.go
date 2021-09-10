@@ -3,8 +3,8 @@ package chain
 import (
 	"context"
 
-	starportconf "github.com/tendermint/starport/starport/chainconf"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
+	starportconf "github.com/interchained/genesis/genesis/chainconf"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
 )
 
 // TODO omit -cli log messages for Stargate.

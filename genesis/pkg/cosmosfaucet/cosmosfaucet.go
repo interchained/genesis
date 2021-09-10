@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
 )
 
 const (

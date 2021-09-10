@@ -3,7 +3,7 @@ package networkbuilder
 import (
 	"context"
 
-	"github.com/tendermint/starport/starport/pkg/spn"
+	"github.com/interchained/starport/starport/pkg/spn"
 )
 
 // ProposalList lists proposals on a chain by status.

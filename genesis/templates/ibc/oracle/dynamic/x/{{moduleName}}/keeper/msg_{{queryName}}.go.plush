@@ -6,11 +6,11 @@ import (
 
     "github.com/bandprotocol/bandchain-packet/obi"
 	"github.com/bandprotocol/bandchain-packet/packet"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	sdk "github.com/interchained/cosmos-sdk/types"
+	sdkerrors "github.com/interchained/cosmos-sdk/types/errors"
+	clienttypes "github.com/interchained/cosmos-sdk/x/ibc/core/02-client/types"
+	channeltypes "github.com/interchained/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/interchained/cosmos-sdk/x/ibc/core/24-host"
 	"<%= modulePath %>/x/<%= moduleName %>/types"
 )
 

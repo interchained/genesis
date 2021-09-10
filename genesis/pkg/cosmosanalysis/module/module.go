@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis"
-	"github.com/tendermint/starport/starport/pkg/gomodule"
-	"github.com/tendermint/starport/starport/pkg/protoanalysis"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
+	"github.com/interchained/genesis/genesis/pkg/protoanalysis"
 )
 
 // Msgs is a module import path-sdk msgs pair.

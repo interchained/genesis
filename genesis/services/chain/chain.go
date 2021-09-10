@@ -10,13 +10,13 @@ import (
 
 	"github.com/go-git/go-git/v5"
 	"github.com/gookit/color"
-	conf "github.com/tendermint/starport/starport/chainconf"
-	sperrors "github.com/tendermint/starport/starport/errors"
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/tendermint/starport/starport/pkg/confile"
-	"github.com/tendermint/starport/starport/pkg/cosmosver"
-	"github.com/tendermint/starport/starport/pkg/xurl"
+	conf "github.com/interchained/genesis/genesis/chainconf"
+	sperrors "github.com/interchained/genesis/genesis/errors"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
+	"github.com/interchained/genesis/genesis/pkg/confile"
+	"github.com/interchained/genesis/genesis/pkg/cosmosver"
+	"github.com/interchained/genesis/genesis/pkg/xurl"
 )
 
 var (
