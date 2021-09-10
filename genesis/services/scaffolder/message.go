@@ -5,13 +5,13 @@ import (
 	"os"
 
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/starport/starport/pkg/field"
-	"github.com/tendermint/starport/starport/pkg/gomodulepath"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	"github.com/tendermint/starport/starport/templates/message"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
+	"github.com/interchained/genesis/genesis/pkg/field"
+	"github.com/interchained/genesis/genesis/pkg/gomodulepath"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/templates/message"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
 )
 
 // messageOptions represents configuration for the message scaffolding

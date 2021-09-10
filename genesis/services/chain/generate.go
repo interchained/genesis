@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/module"
-	"github.com/tendermint/starport/starport/pkg/cosmosgen"
-	"github.com/tendermint/starport/starport/pkg/giturl"
-	"github.com/tendermint/starport/starport/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/module"
+	"github.com/interchained/genesis/genesis/pkg/cosmosgen"
+	"github.com/interchained/genesis/genesis/pkg/giturl"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
 )
 
 const (

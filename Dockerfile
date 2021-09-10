@@ -18,7 +18,7 @@ ENV GOPROXY https://proxy.golang.org
 #
 FROM base as builder
 
-WORKDIR /starport
+WORKDIR /genesis
 
 # cache dependencies.
 COPY ./go.mod . 
@@ -33,10 +33,10 @@ RUN --mount=type=cache,target=/root/.cache/go-build go install -v ./...
 #
 FROM base
 
-RUN useradd -ms /bin/bash tendermint
-USER tendermint
+RUN useradd -ms /bin/bash interchained
+USER interchained
 
-COPY --from=builder /go/bin/starport /usr/bin
+COPY --from=builder /go/bin/genesis /usr/bin
 
 WORKDIR /apps
 
@@ -48,4 +48,4 @@ EXPOSE 6060
 EXPOSE 9090 
 EXPOSE 1317 
 
-ENTRYPOINT ["starport"]
+ENTRYPOINT ["genesis"]
