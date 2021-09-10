@@ -3,8 +3,8 @@ package chaincmd
 import (
 	"fmt"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/cosmosver"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cosmosver"
 )
 
 const (
