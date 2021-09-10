@@ -3,7 +3,7 @@ package networkbuilder
 import (
 	"context"
 
-	"github.com/tendermint/starport/starport/pkg/spn"
+	"github.com/interchained/genesis/genesis/pkg/spn"
 )
 
 // ShowChain shows details of a chain.

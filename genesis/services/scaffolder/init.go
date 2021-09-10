@@ -9,21 +9,21 @@ import (
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/flutter"
-	"github.com/tendermint/starport/starport/pkg/giturl"
-	"github.com/tendermint/starport/starport/pkg/gomodulepath"
-	"github.com/tendermint/starport/starport/pkg/localfs"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/templates/app"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
-	"github.com/tendermint/vue"
+	"github.com/interchained/flutter"
+	"github.com/interchained/genesis/genesis/pkg/giturl"
+	"github.com/interchained/genesis/genesis/pkg/gomodulepath"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/templates/app"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
+	"github.com/interchained/vue"
 )
 
 var (
-	commitMessage = "Initialized with Starport"
+	commitMessage = "Initialized with Genesis Starport"
 	devXAuthor    = &object.Signature{
-		Name:  "Developer Experience team at Tendermint",
-		Email: "hello@tendermint.com",
+		Name:  "Developer Experience team at Genesismint",
+		Email: "support@electronero.org",
 		When:  time.Now(),
 	}
 )

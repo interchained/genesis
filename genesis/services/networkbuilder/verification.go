@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/tendermint/starport/starport/pkg/spn"
+	"github.com/interchained/genesis/genesis/pkg/spn"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/tendermint/starport/starport/pkg/jsondoc"
+	"github.com/interchained/genesis/genesis/pkg/jsondoc"
 )
 
 type VerificationError struct {

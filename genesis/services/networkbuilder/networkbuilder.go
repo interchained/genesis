@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/starport/starport/pkg/gitpod"
-	"github.com/tendermint/starport/starport/pkg/xfilepath"
+	"github.com/interchained/genesis/genesis/pkg/gitpod"
+	"github.com/interchained/genesis/genesis/pkg/xfilepath"
 
-	"github.com/tendermint/starport/starport/services"
+	"github.com/interchained/genesis/genesis/services"
 
-	"github.com/tendermint/starport/starport/pkg/chaincmd"
+	"github.com/interchained/genesis/genesis/pkg/chaincmd"
 
 	"github.com/dariubs/percent"
 	"github.com/fatih/color"
@@ -25,15 +25,15 @@ import (
 
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
-	"github.com/tendermint/starport/starport/pkg/availableport"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/tendermint/starport/starport/pkg/confile"
-	"github.com/tendermint/starport/starport/pkg/ctxticker"
-	"github.com/tendermint/starport/starport/pkg/events"
-	"github.com/tendermint/starport/starport/pkg/spn"
-	"github.com/tendermint/starport/starport/pkg/tendermintrpc"
-	"github.com/tendermint/starport/starport/pkg/xchisel"
-	"github.com/tendermint/starport/starport/services/chain"
+	"github.com/interchained/genesis/genesis/pkg/availableport"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
+	"github.com/interchained/genesis/genesis/pkg/confile"
+	"github.com/interchained/genesis/genesis/pkg/ctxticker"
+	"github.com/interchained/genesis/genesis/pkg/events"
+	"github.com/interchained/genesis/genesis/pkg/spn"
+	"github.com/interchained/genesis/genesis/pkg/tendermintrpc"
+	"github.com/interchained/genesis/genesis/pkg/xchisel"
+	"github.com/interchained/genesis/genesis/services/chain"
 )
 
 const (

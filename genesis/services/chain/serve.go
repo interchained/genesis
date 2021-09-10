@@ -12,16 +12,16 @@ import (
 
 	"github.com/otiai10/copy"
 	"github.com/pkg/errors"
-	conf "github.com/tendermint/starport/starport/chainconf"
-	chaincmdrunner "github.com/tendermint/starport/starport/pkg/chaincmd/runner"
-	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
-	"github.com/tendermint/starport/starport/pkg/dirchange"
-	"github.com/tendermint/starport/starport/pkg/localfs"
-	"github.com/tendermint/starport/starport/pkg/xexec"
-	"github.com/tendermint/starport/starport/pkg/xfilepath"
-	"github.com/tendermint/starport/starport/pkg/xhttp"
-	"github.com/tendermint/starport/starport/pkg/xurl"
-	"github.com/tendermint/starport/starport/services"
+	conf "github.com/interchained/genesis/genesis/chainconf"
+	chaincmdrunner "github.com/interchained/genesis/genesis/pkg/chaincmd/runner"
+	"github.com/interchained/genesis/genesis/pkg/cosmosfaucet"
+	"github.com/interchained/genesis/genesis/pkg/dirchange"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/xexec"
+	"github.com/interchained/genesis/genesis/pkg/xfilepath"
+	"github.com/interchained/genesis/genesis/pkg/xhttp"
+	"github.com/interchained/genesis/genesis/pkg/xurl"
+	"github.com/interchained/genesis/genesis/services"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -164,7 +164,7 @@ func (c *Chain) Serve(ctx context.Context, options ...ServeOption) error {
 
 					var validationErr *conf.ValidationError
 					if errors.As(err, &validationErr) {
-						fmt.Fprintln(c.stdLog().out, "see: https://github.com/tendermint/starport#configure")
+						fmt.Fprintln(c.stdLog().out, "see: https://github.com/interchained/genesis#configure")
 					}
 
 					fmt.Fprintf(c.stdLog().out, "%s\n", infoColor("Waiting for a fix before retrying..."))
@@ -179,7 +179,7 @@ func (c *Chain) Serve(ctx context.Context, options ...ServeOption) error {
 					// We suggest the user to eventually reset the app state
 					if parsedErr == "" {
 						fmt.Fprintf(c.stdLog().out, "%s %s\n", infoColor(`Blockchain failed to start.
-If the new code is no longer compatible with the saved state, you can reset the database by launching:`), "starport chain serve --reset-once")
+If the new code is no longer compatible with the saved state, you can reset the database by launching:`), "genesis starport chain serve --reset-once")
 
 						return fmt.Errorf("cannot run %s", startErr.AppName)
 					}

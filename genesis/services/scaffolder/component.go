@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 
 	"github.com/gobuffalo/genny"
-	"github.com/tendermint/starport/starport/pkg/multiformatname"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	modulecreate "github.com/tendermint/starport/starport/templates/module/create"
+	"github.com/interchained/genesis/genesis/pkg/multiformatname"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	modulecreate "github.com/interchained/genesis/genesis/templates/module/create"
 )
 
 const (

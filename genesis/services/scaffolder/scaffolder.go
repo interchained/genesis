@@ -1,4 +1,4 @@
-// Package scaffolder initializes Starport apps and modifies existing ones
+// Package scaffolder initializes genesis apps and modifies existing ones
 // to add more features in a later time.
 package scaffolder
 
@@ -9,16 +9,16 @@ import (
 	"path/filepath"
 	"strings"
 
-	conf "github.com/tendermint/starport/starport/chainconf"
-	sperrors "github.com/tendermint/starport/starport/errors"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/cosmosanalysis/module"
-	"github.com/tendermint/starport/starport/pkg/cosmosgen"
-	"github.com/tendermint/starport/starport/pkg/cosmosver"
-	"github.com/tendermint/starport/starport/pkg/giturl"
-	"github.com/tendermint/starport/starport/pkg/gocmd"
-	"github.com/tendermint/starport/starport/pkg/gomodule"
+	conf "github.com/interchained/genesis/genesis/chainconf"
+	sperrors "github.com/interchained/genesis/genesis/errors"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/cosmosanalysis/module"
+	"github.com/interchained/genesis/genesis/pkg/cosmosgen"
+	"github.com/interchained/genesis/genesis/pkg/cosmosver"
+	"github.com/interchained/genesis/genesis/pkg/giturl"
+	"github.com/interchained/genesis/genesis/pkg/gocmd"
+	"github.com/interchained/genesis/genesis/pkg/gomodule"
 )
 
 // Scaffolder is Starport app scaffolder.
