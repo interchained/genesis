@@ -7,12 +7,12 @@ import (
 
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/AlecAivazis/survey/v2/terminal"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/interchained/cosmos-sdk/crypto/keyring"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cliquiz"
-	"github.com/tendermint/starport/starport/pkg/gitpod"
-	"github.com/tendermint/starport/starport/pkg/spn"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/pkg/cliquiz"
+	"github.com/interchained/genesis/genesis/pkg/gitpod"
+	"github.com/interchained/genesis/genesis/pkg/spn"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 )
 
 var (
