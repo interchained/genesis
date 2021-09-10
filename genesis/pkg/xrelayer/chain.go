@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/interchained/cosmos-sdk/types"
 	"github.com/pkg/errors"
-	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
-	tsrelayer "github.com/tendermint/starport/starport/pkg/nodetime/programs/ts-relayer"
-	"github.com/tendermint/starport/starport/pkg/tendermintrpc"
+	"github.com/interchained/genesis/genesis/pkg/cosmosfaucet"
+	tsrelayer "github.com/interchained/genesis/genesis/pkg/nodetime/programs/ts-relayer"
+	"github.com/interchained/genesis/genesis/pkg/tendermintrpc"
 )
 
 // faucetTimeout used to set a timeout while transferring coins from a faucet.

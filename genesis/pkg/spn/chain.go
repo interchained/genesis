@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	"github.com/tendermint/starport/starport/pkg/jsondoc"
+	"github.com/interchained/cosmos-sdk/types"
+	"github.com/interchained/cosmos-sdk/types/query"
+	launchtypes "github.com/interchained/gpn/x/launch/types"
+	"github.com/interchained/genesis/genesis/pkg/jsondoc"
 )
 
 // chainListOptions holds chain listing options.

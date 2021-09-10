@@ -9,9 +9,9 @@ import (
 	"io"
 
 	"github.com/gorilla/rpc/v2/json2"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/nodetime"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/step"
+	"github.com/interchained/genesis/genesis/pkg/nodetime"
 	"golang.org/x/sync/errgroup"
 )
 

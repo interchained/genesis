@@ -1,6 +1,6 @@
 package tendermintlogger
 
-import tmlog "github.com/tendermint/tendermint/libs/log"
+import tmlog "github.com/interchained/genesismint/libs/log"
 
 type DiscardLogger struct{}
 

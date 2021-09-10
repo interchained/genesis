@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cosmos/cosmos-sdk/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
+	"github.com/interchained/cosmos-sdk/types"
+	launchtypes "github.com/interchained/gpn/x/launch/types"
 )
 
 // reviewal keeps a proposal's reviewal.

@@ -3,7 +3,7 @@ package services
 import (
 	"os"
 
-	"github.com/tendermint/starport/starport/pkg/xfilepath"
+	"github.com/interchained/genesis/genesis/pkg/xfilepath"
 )
 
 var (

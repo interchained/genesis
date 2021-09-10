@@ -7,8 +7,8 @@ import (
 
 	"github.com/gobuffalo/genny"
 	"github.com/gobuffalo/logger"
-	"github.com/tendermint/starport/starport/pkg/placeholder"
-	"github.com/tendermint/starport/starport/pkg/validation"
+	"github.com/interchained/genesis/genesis/pkg/placeholder"
+	"github.com/interchained/genesis/genesis/pkg/validation"
 )
 
 var _ validation.Error = (*dryRunError)(nil)

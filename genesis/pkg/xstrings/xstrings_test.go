@@ -2,7 +2,7 @@ package xstrings_test
 
 import (
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/starport/starport/pkg/xstrings"
+	"github.com/interchained/genesis/genesis/pkg/xstrings"
 	"testing"
 )
 

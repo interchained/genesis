@@ -7,8 +7,8 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/nodetime"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/nodetime"
 )
 
 // Config represent swagger-combine config.

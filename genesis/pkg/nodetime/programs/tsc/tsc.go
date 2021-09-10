@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 
 	"github.com/imdario/mergo"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/confile"
-	"github.com/tendermint/starport/starport/pkg/nodetime"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/confile"
+	"github.com/interchained/genesis/genesis/pkg/nodetime"
 )
 
 const nodeModulesPath = "/snapshot/gen-nodetime/node_modules"

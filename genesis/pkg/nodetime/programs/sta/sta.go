@@ -5,8 +5,8 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/exec"
-	"github.com/tendermint/starport/starport/pkg/nodetime"
+	"github.com/interchained/genesis/genesis/pkg/cmdrunner/exec"
+	"github.com/interchained/genesis/genesis/pkg/nodetime"
 )
 
 // Generate generates client code and TS types to outPath from an OpenAPI spec that resides at specPath.
