@@ -3,8 +3,8 @@ package protocgendart
 import (
 	"fmt"
 
-	"github.com/tendermint/starport/starport/pkg/localfs"
-	"github.com/tendermint/starport/starport/pkg/protoc-gen-dart/data"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/protoc-gen-dart/data"
 )
 
 // Name of the plugin.

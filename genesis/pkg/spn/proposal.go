@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cosmos/cosmos-sdk/types"
-	launchtypes "github.com/tendermint/spn/x/launch/types"
-	"github.com/tendermint/starport/starport/pkg/jsondoc"
+	"github.com/interchained/cosmos-sdk/types"
+	launchtypes "github.com/interchained/gpn/x/launch/types"
+	"github.com/interchained/genesis/genesis/pkg/jsondoc"
 )
 
 // ProposalType represents the type of the proposal
