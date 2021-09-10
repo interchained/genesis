@@ -2,15 +2,15 @@ package starportcmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/docs"
-	"github.com/tendermint/starport/starport/pkg/localfs"
-	"github.com/tendermint/starport/starport/pkg/markdownviewer"
+	"github.com/interchained/genesis/docs"
+	"github.com/interchained/genesis/genesis/pkg/localfs"
+	"github.com/interchained/genesis/genesis/pkg/markdownviewer"
 )
 
 func NewDocs() *cobra.Command {
 	c := &cobra.Command{
 		Use:   "docs",
-		Short: "Show Starport docs",
+		Short: "Show Genesis Starport docs",
 		Args:  cobra.ExactArgs(0),
 		RunE:  docsHandler,
 	}

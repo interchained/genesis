@@ -11,14 +11,14 @@ import (
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
-	"github.com/tendermint/starport/starport/internal/version"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/events"
-	"github.com/tendermint/starport/starport/pkg/gitpod"
-	"github.com/tendermint/starport/starport/pkg/goenv"
-	"github.com/tendermint/starport/starport/pkg/xgenny"
-	"github.com/tendermint/starport/starport/services/chain"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/internal/version"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/events"
+	"github.com/interchained/genesis/genesis/pkg/gitpod"
+	"github.com/interchained/genesis/genesis/pkg/goenv"
+	"github.com/interchained/genesis/genesis/pkg/xgenny"
+	"github.com/interchained/genesis/genesis/services/chain"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 )
 
 const (
@@ -39,15 +39,15 @@ func New(ctx context.Context) *cobra.Command {
 	checkNewVersion(ctx)
 
 	c := &cobra.Command{
-		Use:   "starport",
-		Short: "Starport offers everything you need to scaffold, test, build, and launch your blockchain",
-		Long: `Starport is a tool for creating sovereign blockchains built with Cosmos SDK, the world’s
-most popular modular blockchain framework. Starport offers everything you need to scaffold,
+		Use:   "genesis starport",
+		Short: "Genesis Starport by Electronero Smart Chain SDK offers everything you need to scaffold, test, build, and launch your blockchain",
+		Long: `Genesis Starport is a tool for creating sovereign blockchains built following XRC20 token standards deployed with Electronero Smart Chain SDK, and Cosmos Network the world’s
+most popular modular blockchain framework. Genesis Starport offers everything you need to scaffold,
 test, build, and launch your blockchain.
 
 To get started, create a blockchain:
 
-starport scaffold chain github.com/cosmonaut/mars`,
+genesis starport scaffold chain github.com/interchained/moon`,
 		SilenceUsage:  true,
 		SilenceErrors: true,
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
@@ -173,19 +173,19 @@ func deprecated() []*cobra.Command {
 	return []*cobra.Command{
 		{
 			Use:        "app",
-			Deprecated: "use `starport scaffold chain` instead.",
+			Deprecated: "use `genesis starport scaffold chain` instead.",
 		},
 		{
 			Use:        "build",
-			Deprecated: "use `starport chain build` instead.",
+			Deprecated: "use `genesis starport chain build` instead.",
 		},
 		{
 			Use:        "serve",
-			Deprecated: "use `starport chain serve` instead.",
+			Deprecated: "use `genesis starport chain serve` instead.",
 		},
 		{
 			Use:        "faucet",
-			Deprecated: "use `starport chain faucet` instead.",
+			Deprecated: "use `genesis starport chain faucet` instead.",
 		},
 	}
 }
@@ -204,7 +204,7 @@ func checkNewVersion(ctx context.Context) {
 	}
 
 	fmt.Printf(`·
-· 🛸 Starport %q is available!
+· 🛸 Genesis Starport %q is available!
 ·
 · If you're looking to upgrade check out the instructions: https://docs.starport.network/intro/install.html#upgrading-your-starport-installation
 ·

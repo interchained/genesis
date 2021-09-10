@@ -8,11 +8,11 @@ import (
 
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/starport/starport/pkg/cliquiz"
-	"github.com/tendermint/starport/starport/pkg/clispinner"
-	"github.com/tendermint/starport/starport/pkg/events"
-	"github.com/tendermint/starport/starport/pkg/xurl"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/pkg/cliquiz"
+	"github.com/interchained/genesis/genesis/pkg/clispinner"
+	"github.com/interchained/genesis/genesis/pkg/events"
+	"github.com/interchained/genesis/genesis/pkg/xurl"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 )
 
 const (

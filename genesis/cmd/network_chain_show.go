@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tendermint/starport/starport/pkg/spn"
-	"github.com/tendermint/starport/starport/services/networkbuilder"
+	"github.com/interchained/genesis/genesis/pkg/spn"
+	"github.com/interchained/genesis/genesis/services/networkbuilder"
 
 	"github.com/goccy/go-yaml"
 	"github.com/spf13/cobra"
